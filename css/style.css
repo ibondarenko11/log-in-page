@@ -100,9 +100,7 @@ a,button {
 
 .log-in-block {
     width: 100%;
-    display: inline-block;
-    min-height: 30px;
-    padding-left: 70px;
+    display: flex;
     padding-top: 11px;
     padding-bottom: 11px;
     cursor: pointer;
@@ -111,10 +109,11 @@ a,button {
     position: relative;
     color: white;
     font-size: 12px;
+    text-align: center;
 }
 
-.log-in-block span:nth-child(2) {
-    margin-left: 128px;
+.log-in-block span {
+    flex: 1 1 50%;
 }
 
 .log-in-block::before {
@@ -178,6 +177,9 @@ a,button {
     position: relative;
     margin-bottom: 30px;
     font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #tick {
@@ -207,6 +209,7 @@ a,button {
 
 #tick:checked + label::before { 
     background-color: #153416;
+    border-color: #153416;
 }
 
 #tick:checked + label::after {
@@ -216,8 +219,8 @@ a,button {
     left: 6px;
     width: 5px;
     height: 10px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
     transform: rotate(38deg);
 }
 
@@ -244,8 +247,9 @@ a,button {
 .register{
     font-size: 12px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 30px;
+    gap: 30px;
 }
 
 .register p{
